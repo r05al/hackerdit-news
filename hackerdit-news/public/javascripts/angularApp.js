@@ -157,6 +157,7 @@ app.controller('MainCtrl', [
     $scope.test = 'Hello world!';
     $scope.posts = posts.posts;
     $scope.isLoggedIn = auth.isLoggedIn;
+    $scope.currentUser = auth.currentUser;
 
     $scope.addPost = function(){
       if(!$scope.title || $scope.title === '') { return; }
